@@ -47,8 +47,14 @@ class Solution:
 
         return max_profit
     
-    
+
 solution = Solution()
 print(solution.maxProfit([7,1,5,3,6,4]))
 print(solution.maxProfit([1,2,3,4,5]))
 print(solution.maxProfit([7,6,4,3,1]))
+
+
+"""
+Use the sliding window technique. Greed condition: anytime you can make a profit, immediately buy and sell for those days. and add to the max profit.
+Move pointer when making a profit or when you find a lower price than the current day.
+"""
