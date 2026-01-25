@@ -60,5 +60,5 @@ print(sol.dailyTemperatures([30,60,90]))
 
 """
 Use the stack data structure. Keep track of each temperature and index pair and when you find a greater temperature, pop it
-and find the different in days and store it in result.
+and find the difference in days and store it in result.
 """

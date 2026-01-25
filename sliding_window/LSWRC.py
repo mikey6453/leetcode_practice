@@ -43,4 +43,13 @@ class Solution:
 Test1 = Solution()
 print(Test1.lengthOfLongestSubstring("abcabcbb"))
 
+Test2 = Solution()
+print(Test2.lengthOfLongestSubstring("bbbbb"))
 
+Test3 = Solution()
+print(Test3.lengthOfLongestSubstring("pwwkew"))
+
+
+"""
+Use the sliding window method. Add to the window until you see a dup character, can use string or set for this. remove characters until there is no more dups, add the recent character and calc max length. 
+"""

@@ -59,3 +59,10 @@ Test2 = Solution()
 
 print(Test1.maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
 print(Test2.maxSlidingWindow([1], 1))
+
+
+"""
+Use the sliding window technique and queue to keep track of max values in each window. iterate through the nums array, and if the oldest value(index) of queue is less than the left boundary,
+pop it. (Note that every value in the queue is older than the current value we are comparing to it. Which means they are to the left of the current value) Pop the values from the right (lower first) while the older
+values are les than the current value. Add the value to the queue. If the window is of correct size, add the max value (first in queue).
+"""

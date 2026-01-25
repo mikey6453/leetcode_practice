@@ -53,3 +53,9 @@ Test1 = Solution()
 Test2 = Solution()
 print(Test1.search([-1,0,3,5,9,12], 9))
 print(Test2.search([-1,0,3,5,9,12], 2))
+
+
+"""
+Use Binary search, O(log(n)). While the L is to the left or at the R pointer, find the mid point and eliminate half the space by comparing if it is greater than or less than the target. If it is the target, then return
+that value.
+"""
