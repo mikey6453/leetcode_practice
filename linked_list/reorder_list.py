@@ -42,3 +42,11 @@ class Solution:
             
             head = temp1
             second = temp2
+
+
+"""
+1. Use fast and slow pointers to get the middle of the linked list.
+2. Split in half.
+3. Reverse the second part of the list
+4. Combine the lists alternating.
+"""
