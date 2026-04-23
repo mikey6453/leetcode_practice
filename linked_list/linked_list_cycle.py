@@ -68,3 +68,9 @@ print("Test 4 (single node no cycle):", solution.hasCycle(head))  # False
 # Test 5: empty list
 head = create_linked_list([], -1)
 print("Test 5 (empty list):", solution.hasCycle(head))  # False
+
+
+
+"""
+Use a hashset. Check if curr.next is in hashset, add it if not. Return if in seen.
+"""

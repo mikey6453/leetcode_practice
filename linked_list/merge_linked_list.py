@@ -85,3 +85,8 @@ merged = solution.mergeTwoLists(l1, l2)
 print("Test 4:", linked_list_to_list(merged))  # [1,2,3,4,5,7]
 
 
+
+"""
+Create dummy node to start new linked list. Move pointer to lower value and move the pointer of the lower value when chosen. Append the rest of te linked list if there are still some missing values.
+Return dummy.next
+"""
