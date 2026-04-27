@@ -19,6 +19,9 @@ Explanation: 321 + 654 = 975.
 """
 
 
+from typing import Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
