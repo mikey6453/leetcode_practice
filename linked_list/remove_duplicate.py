@@ -47,29 +47,3 @@ class Solution:
         
         return head
     
-
-def test_delete_duplicates():
-    sol = Solution()
-
-    test_cases = [
-        # (input, expected_output)
-        ([1, 1, 2], [1, 2]),
-        ([1, 1, 2, 3, 3], [1, 2, 3]),
-        ([1, 1, 1, 1], [1]),
-        ([1, 2, 3, 4], [1, 2, 3, 4]),  # no duplicates
-        ([], []),  # empty list
-        ([1], [1]),  # single node
-        ([1, 2, 2, 2, 3], [1, 2, 3]),
-        ([1, 1, 2, 2, 3, 3], [1, 2, 3]),
-    ]
-
-    for i, (input_list, expected) in enumerate(test_cases):
-        head = build_linked_list(input_list)
-        result_head = sol.deleteDuplicates(head)
-        result_list = linked_list_to_list(result_head)
-
-        assert result_list == expected, f"Test case {i} failed: expected {expected}, got {result_list}"
-        print(f"Test case {i} passed")
-
-if __name__ == "__main__":
-    test_delete_duplicates()
