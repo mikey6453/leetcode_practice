@@ -47,3 +47,4 @@ class Solution:
         
         return head
     
+# 1. if you run into a dup, move the pointer to the node one past the dup

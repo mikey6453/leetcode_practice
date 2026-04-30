@@ -60,3 +60,10 @@ class Solution:
             curr = curr.next
         
         return dummy.next
+    
+
+# 1. keep track of prev which will indicate the path of the list
+# 2. if you run into a duplicate, update curr until you reach the end of the duplicate numbers, else move prev (add it to the list)
+# 3. point prev to the next number once you reach end of duplicate numbers
+# 4. update curr
+# 5. main idea is to skip all of the duplicate numbers
