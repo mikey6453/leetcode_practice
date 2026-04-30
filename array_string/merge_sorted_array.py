@@ -71,3 +71,11 @@ nums1 = [7,8,9,0,0,0]
 nums2 = [1,2,3]
 sol.merge(nums1, 3, nums2, 3)
 print(nums1)  # Expected: [1,2,3,7,8,9]
+
+
+# 3. nums1 has all larger numbers
+nums1 = [4,8,9,0,0,0]
+nums2 = [1,2,3]
+sol.merge(nums1, 3, nums2, 3)
+print(nums1)  # Expected: [1,2,3,7,8,9]
+
