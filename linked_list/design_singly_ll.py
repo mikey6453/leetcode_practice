@@ -74,6 +74,8 @@ class LinkedList:
 
         while prev.next:
             if index == i:
+                if prev.next == self.tail:
+                    self.tail = prev
                 prev.next = prev.next.next
                 return True
             prev = prev.next
