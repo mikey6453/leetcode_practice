@@ -32,4 +32,24 @@ class TreeNode:
 
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
-        pass
+        self.res = root.val
+
+        def dfs(root):
+            if not root:
+                return 0
+
+            # split max
+            max_left = dfs(root.left)
+            max_right = dfs(root.right)
+
+            max_left = max(max_left, 0)
+            max_right = max(max_right, 0)
+
+            # compute max path sum with split
+            self.res = max(self.res, max_left + max_right + root.val)
+
+            # return max without splitting
+            return max(0, max_left, max_right) + root.val
+
+        dfs(root)
+        return self.res
