@@ -27,3 +27,24 @@ from typing import List
 
 class Solution:
     def combinationSum(self, nums: List[int], target: int) -> List[List[int]]:
+        result = []
+        self.backtrack(nums, target, 0, [], result, 0)
+        return result
+
+    
+    def backtrack(self, nums, target, curSum, curComb, result, start):
+        if curSum == target:
+            result.append(curComb.copy())
+            return
+        
+        if curSum > target:
+            return
+        
+        for i in range(start, len(nums)):
+            curComb.append(nums[i])
+            curSum += nums[i]
+
+            self.backtrack(nums, target, curSum, curComb, result, i)
+
+            curComb.pop()
+            curSum -= nums[i]
